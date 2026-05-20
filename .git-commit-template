@@ -1,0 +1,23 @@
+# <type>: <description>
+#
+# 类型（必填）:
+#   feat      新功能
+#   fix       Bug 修复
+#   refactor  重构（不改变功能）
+#   docs      文档变更
+#   test      测试相关
+#   chore     构建/工具/依赖
+#   perf      性能优化
+#   ci        CI/CD 配置
+#
+# 规范:
+#   - description 中文，简明描述变更内容
+#   - 一个 commit 只做一件事
+#   - body 可选，说明 why 而非 what
+#   - 不要混合功能变更和重构
+#
+# 示例:
+#   feat: 新增多链路有序下沉模式
+#   fix: 修复并发访问下队列关闭的竞态条件
+#   refactor: 从 runStepLoop 和 runStepLoopOrdered 中提取公共方法 processStepLoop
+#   test: 新增 volatile 可见性的并发安全测试

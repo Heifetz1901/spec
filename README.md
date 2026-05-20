@@ -1,66 +1,34 @@
-# Claude Code 代码规范审查 Skills
+# Spec - Claude Code Skills 合集
 
-基于《阿里巴巴 Java 开发手册（黄山版 v1.7.1）》整理的 Claude Code 自定义 Skill 资源包，可供代码审查与代码生成时使用。
+Claude Code 自定义 Skill 资源包，用于代码规范审查与测试用例设计。
 
-## 声明
+## 变更约定
 
-本资源包基于《阿里巴巴 Java 开发手册（黄山版 v1.7.1）》整理而成，仅供学习与参考使用。原手册版权归原作者所有。请勿将本内容用于商业用途或声称原创。
+本仓库中的文档是**单一事实来源（Single Source of Truth）**，`~/.claude/skills/` 等安装目录是运行时副本。
 
-## 目录结构
+**变更流程**：
 
-```
-spec/
-├── java/                                # Java 代码规范审查 Skill
-│   ├── .claude/skills/java-coding-review/
-│   │   └── SKILL.md                     # Java 代码规范审查标准
-│   ├── 阿里巴巴Java开发手册-黄山版.md     # 源文档
-│   ├── 阿里巴巴Java开发手册-黄山版v1.7.1.pdf
-│   └── README.md
-├── db/
-│   └── mysql/                           # MySQL 数据库规范审查 Skill
-│       ├── .claude/skills/mysql-coding-review/
-│       │   └── SKILL.md                 # MySQL 数据库规范审查标准
-│       └── README.md
-└── README.md                            # 本文件
-```
+1. 先修改本仓库中的源文档
+2. 确认变更正确后，经用户确认再同步到安装目录
 
-## 包含的 Skills
+**原则**：
+- 本仓库优先，安装目录从属
+- 不得跳过源文档直接修改安装目录
+- 同步到安装目录前需用户确认
 
-| Skill | 说明 | 维度 |
-|-------|------|------|
-| `java-coding-review` | Java 代码规范审查 | 编程规约、异常日志、单元测试、安全规约、MySQL、工程结构、设计规约 |
-| `mysql-coding-review` | MySQL 数据库规范审查 | 建表规约、索引规约、SQL 语句 |
+## 模块
 
-## 安装
+| 模块 | 说明 | 详细文档 |
+|------|------|---------|
+| [dev/java](dev/java/README.md) | Java 代码规范审查（基于阿里巴巴 Java 开发手册） | [README](dev/java/README.md) |
+| [dev/db/mysql](dev/db/mysql/README.md) | MySQL 数据库规范审查 | [README](dev/db/mysql/README.md) |
+| [test](test/README.md) | 测试用例设计（等价类、边界值、判定表、场景法） | [README](test/README.md) |
+| [workflow](workflow/README.md) | 开发工作流（需求变更/缺陷修复，8步串行执行） | [README](workflow/README.md) |
 
-将对应模块的 `.claude` 目录复制到用户主目录下即可全局生效：
+## 使用方式
 
-```bash
-# 全局安装（所有项目生效）
-cp -r java/.claude ~/.claude/
-cp -r db/mysql/.claude ~/.claude/
-
-# Windows
-xcopy /E /I java\.claude %USERPROFILE%\.claude\
-```
-
-也可安装到单个项目根目录下，仅对该项目生效：
-
-```bash
-cp -r java/.claude /path/to/your-project/
-```
-
-安装后，Claude Code 在处理对应语言的代码时将自动激活相应 Skill，无需额外配置。
-
-## 使用
-
-安装后无需手动操作。Claude Code 在以下场景会自动激活对应 Skill：
-
-- 审查或审计 Java 源代码时
-- 生成需要符合企业级规范的 Java 代码时
-- 审查或设计 MySQL 数据库表结构时
-- 编写或审查 DDL、SQL 查询时
+各模块包含独立的 `.claude/skills/` 目录，复制到用户主目录或项目根目录即可激活。详见各模块 README。
 
 ## License
 
-仅供学习与参考使用。原手册版权归原作者所有。
+仅供学习与参考使用。原始文档版权归原作者所有。

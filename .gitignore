@@ -1,5 +1,5 @@
 # OMC local state
 .omc/
 
-# Claude Code local settings
-.claude/settings.local.json
+# Claude Code local settings (root only, subdirectory skills are shared)
+/.claude/
