@@ -18,12 +18,18 @@ Claude Code 自定义 Skill 资源包，用于代码规范审查与测试用例�
 
 ## 模块
 
-| 模块 | 说明 | 详细文档 |
-|------|------|---------|
-| [dev/java](dev/java/README.md) | Java 代码规范审查（基于阿里巴巴 Java 开发手册） | [README](dev/java/README.md) |
-| [dev/db/mysql](dev/db/mysql/README.md) | MySQL 数据库规范审查 | [README](dev/db/mysql/README.md) |
-| [test](test/README.md) | 测试用例设计（等价类、边界值、判定表、场景法） | [README](test/README.md) |
-| [workflow](workflow/README.md) | 开发工作流（需求变更/缺陷修复，8步串行执行） | [README](workflow/README.md) |
+目录按研发流程顺序编号，覆盖 产品设计 → 研发设计 → 开发 → 测试 全流程：
+
+| 模块 | 阶段 | 状态 | 说明 |
+|------|------|------|------|
+| [00-workflow](00-workflow/README.md) | 贯穿全流程 | 可用 | 开发工作流（需求变更/缺陷修复，8步串行执行） |
+| [01-prod-design](01-prod-design/README.md) | ① 产品设计 | 规划中 | 产品设计规范与 PRD 模板 |
+| [02-tech-design](02-tech-design/README.md) | ② 研发设计 | 可用 | 技术类设计文档模板与生成 Skill |
+| [03-dev/java](03-dev/java/README.md) | ③ 开发 | 可用 | Java 代码规范审查（基于阿里巴巴 Java 开发手册） |
+| [03-dev/db/mysql](03-dev/db/mysql/README.md) | ③ 开发 | 可用 | MySQL 数据库规范审查 |
+| [04-test](04-test/README.md) | ④ 测试 | 可用 | 测试用例设计（等价类、边界值、判定表、场景法） |
+
+状态说明：**规划中**（目录占位，内容待编写）→ **编写中**（草稿未定稿）→ **可用**（内容完整可使用）。
 
 ## 使用方式
 
