@@ -13,8 +13,8 @@
 title: {主题}
 date: YYYY-MM-DD
 doc_type: 调研
-domain: tech          # 按主题自由确定，如 tech / work / life / health
-tags: []              # 便于检索过滤，如：[选型, 向量数据库]
+domain: tech          # 主题自然大类，自由命名（如 tech / ai / java / work / health）；优先复用已有目录，拿不准时询问用户
+tags: []              # 细分主题标签（跨目录检索主通道），如：[选型, 向量数据库]
 status: 跟进中        # 已结论 / 跟进中
 source: research
 # replaces: ~/workspace/research/tech/旧主题-20260101.md   # 仅取代旧调研时填写

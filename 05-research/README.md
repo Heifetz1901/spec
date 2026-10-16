@@ -53,7 +53,7 @@ mkdir -p /path/to/your-project/.claude/skills && cp -r .agents/skills/research /
 ## 输出约定
 
 - **默认输出目录**：`~/workspace/research/`（不存在时由工作流自动创建；步骤0可覆盖）
-- **目录组织**：`{domain}/{主题}-YYYYMMDD.md`，domain 按主题自由确定（如 tech、work、life 等）
+- **目录组织**：`{domain}/{主题}-YYYYMMDD.md`，domain 为主题自然大类（优先复用已有目录，拿不准时询问用户确认）；细分主题放 tags 标签，作为跨目录检索主通道
 - **会话文件**：`research-session-{主题}.md`（输出目录根下，每个调研一个，支持多调研并行）
 
 ## 工作流图（执行视图）
