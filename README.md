@@ -27,6 +27,7 @@ Claude Code 自定义 Skill 资源包，用于代码规范审查与测试用例�
 | [02-tech-design](02-tech-design/README.md) | ② 研发设计 | 可用 | 技术类设计文档模板与生成 Skill |
 | [03-dev/java](03-dev/java/README.md) | ③ 开发 | 可用 | Java 代码规范审查（基于阿里巴巴 Java 开发手册） |
 | [03-dev/db/mysql](03-dev/db/mysql/README.md) | ③ 开发 | 可用 | MySQL 数据库规范审查 |
+| [03-dev/git](03-dev/git/README.md) | ③ 开发 | 可用 | Git 提交工作流（生成→校验→确认→提交）+ git 配置模板 |
 | [04-test](04-test/README.md) | ④ 测试 | 可用 | 测试用例设计（等价类、边界值、判定表、场景法） |
 | [05-research](05-research/README.md) | 通用 | 可用 | 调研工作流与文档模板（断点续跑，产出沉淀个人知识库） |
 
@@ -34,7 +35,7 @@ Claude Code 自定义 Skill 资源包，用于代码规范审查与测试用例�
 
 ## 使用方式
 
-各模块包含独立的 `.claude/skills/` 目录，复制到用户主目录或项目根目录即可激活。详见各模块 README。
+各模块包含独立的 skills 目录（`.claude/skills/`，或跨工具的 `.agents/skills/`），复制到用户主目录或项目根目录即可激活。详见各模块 README。
 
 ## License
 
