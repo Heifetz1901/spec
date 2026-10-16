@@ -35,7 +35,7 @@ mkdir -p /path/to/your-project/.claude/skills && cp -r .agents/skills/readme /pa
 ## 目录结构
 
 ```
-06-docs/
+99-tools/docs/
 ├── .agents/
 │   └── skills/
 │       └── readme/

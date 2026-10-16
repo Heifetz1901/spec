@@ -48,7 +48,7 @@ cp .gitignore     /path/to/your-repo/.gitignore
 ## 目录结构
 
 ```
-03-dev/git/
+99-tools/git/
 ├── .agents/
 │   └── skills/
 │       └── git-commit/
