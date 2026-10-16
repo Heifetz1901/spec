@@ -30,7 +30,7 @@ Claude Code 自定义 Skill 资源包，用于代码规范审查与测试用例�
 | [99-tools/git](99-tools/git/README.md) | 通用 | 可用 | Git 提交工作流（生成→校验→确认→提交）+ git 配置模板 |
 | [04-test](04-test/README.md) | ④ 测试 | 可用 | 测试用例设计（等价类、边界值、判定表、场景法） |
 | [05-research](05-research/README.md) | 通用 | 可用 | 调研工作流与文档模板（断点续跑，产出沉淀个人知识库） |
-| [99-tools/docs](99-tools/docs/README.md) | 通用 | 可用 | README 编写规范与生成 Skill（盘点→补信息→生成→自检→写入） |
+| [99-tools/readme](99-tools/readme/README.md) | 通用 | 可用 | README 编写规范与生成 Skill（盘点→补信息→生成→自检→写入） |
 
 状态说明：**规划中**（目录占位，内容待编写）→ **编写中**（草稿未定稿）→ **可用**（内容完整可使用）。
 

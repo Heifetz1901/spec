@@ -1,6 +1,6 @@
-# Docs - README 编写规范 Skill
+# Readme - README 编写规范 Skill
 
-文档类规范模块：定义 README 的结构与安装章节写法，并提供 `readme` Skill 按《README编写规范》为项目生成 README（盘点项目 → 补关键信息 → 按模板生成 → 自检 → 确认写入）。
+README 编写规范模块：定义 README 的结构与安装章节写法，并提供 `readme` Skill 按《README编写规范》为项目生成 README（盘点项目 → 补关键信息 → 按模板生成 → 自检 → 确认写入）。
 
 ## 状态
 
@@ -35,7 +35,7 @@ mkdir -p /path/to/your-project/.claude/skills && cp -r .agents/skills/readme /pa
 ## 目录结构
 
 ```
-99-tools/docs/
+99-tools/readme/
 ├── .agents/
 │   └── skills/
 │       └── readme/
@@ -77,5 +77,5 @@ README 编写工作流，步骤 0→4 串行执行：
 
 ## 后续规划
 
-- 变更日志（CHANGELOG）规范（Keep a Changelog 风格）
-- docs/ 目录组织规范（多文档项目的结构约定）
+- 变更日志（CHANGELOG）规范（Keep a Changelog 风格，落地时独立为 `99-tools/changelog` 模块）
+- docs/ 目录组织规范（多文档项目的结构约定，落地时独立模块）
