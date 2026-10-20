@@ -25,6 +25,7 @@
 - `.agents/skills/` 是跨工具约定：Codex / OpenCode 原生识别，Claude Code 用户复制到 `~/.claude/skills/` 使用
 - 早期模块的 `.claude/skills/` 为历史形态，仅维护不再新增
 - 附属目录无内容不建空目录
+- 模板与规范写在同一文件：先给模板（输出长什么样），再列规范——按必须做、建议做、禁止做三档分述
 - 新增技能后，顶层 README 的模块总览表需同步更新
 
 ### SKILL.md 写作标准
