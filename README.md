@@ -141,6 +141,7 @@ mkdir -p ~/.claude/skills && cp -r 99-tools/git/.agents/skills/git-commit ~/.cla
 | [05-research](05-research/README.md) | 通用 | `research` | 可用 | 调研工作流（断点续跑） |
 | [99-tools/git](99-tools/git/README.md) | 通用 | `git-commit` | 可用 | Git 提交工作流 + git 配置模板 |
 | [99-tools/readme](99-tools/readme/README.md) | 通用 | `readme` | 可用 | README 编写规范与生成 |
+| [99-tools/clarify](99-tools/clarify/README.md) | 通用 | `clarify` `gatekeep` `clarify-with-docs` | 可用 | 需求澄清与领域建模（澄清+术语/ADR 维护） |
 
 状态说明：**规划中**(目录占位)→ **编写中**(草稿未定稿)→ **可用**(内容完整可使用)。
 
