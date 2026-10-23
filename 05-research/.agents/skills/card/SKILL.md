@@ -21,6 +21,8 @@ description: "把调研档案、对话片段或零散的知识蒸馏成可背诵
 
 例：档案 `research/java/ZGC低时延机制-20261016.md` → 卡片 `research/java/jvm/gc/cards/zgc.md`
 
+公共术语表放 `research/<大主题>/<分类1>/<分类2>/术语表.md`（与 cards/ 同层），同层卡片共享译名与中英对照；例：`research/java/jvm/gc/术语表.md`
+
 ## 建卡步骤
 
 1. **定位来源**：按上节三类识别；多来源时问用户以哪个为准
